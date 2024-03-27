@@ -13,6 +13,20 @@ export default function HomeBrandsSlider() {
         spaceBetween={60}
         loop={true}
         modules={[Pagination]}
+        breakpoints={{
+            1220: {
+                slidesPerView: 4,
+            },
+            800: {
+                slidesPerView: 3,
+            },
+            430: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+          }}
         className="mySwiper"
       >
         <SwiperSlide>

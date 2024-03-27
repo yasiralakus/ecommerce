@@ -1,5 +1,10 @@
+import { useState } from "react"
+
 export default function Products() {
 
+    const [openCategories, setOpenCategories] = useState(false);
+    const [openColor, setOpenColor] = useState(false);
+    const [openSize, setOpenSize] = useState(false);
 
     return (
         <div className="outlet-page fade-in">
@@ -17,13 +22,100 @@ export default function Products() {
                     <header>
 
                         <div>
-                            <button>Categories</button>
-                            <button>Price</button>
-                            <button>Color</button>
-                            <button>Size</button>
+                            <button onClick={() => (openCategories === true ? setOpenCategories(false) : setOpenCategories(true))}>Categories</button>
+                            <button onClick={() => (openColor === true ? setOpenColor(false) : setOpenColor(true))}>Color</button>
+                            <button onClick={() => (openSize === true ? setOpenSize(false) : setOpenSize(true))}>Size</button>
                         </div>
 
                         <p>Showing 01-09 of 17 Results</p>
+
+                        {openCategories === true && 
+                        <div className="products-filter-categories">
+                            <header>
+                                <h1>CATEGORIES</h1>
+                            </header>
+                            <ul>
+                                <li>Chair</li>
+                                <ul style={{paddingLeft: '20px'}}>
+                                    <li>T-Shirts</li>
+                                    <li>Striped Shirts</li>
+                                    <li>Half Shirts</li>
+                                    <li>Formal Shirts</li>
+                                    <li>Bilazers</li>
+                                </ul>
+                                <li>Furniture</li>
+                                <ul style={{paddingLeft: '20px'}}>
+                                    <li>Men Bag</li>
+                                    <li>Shoes</li>
+                                    <li>Watch</li>
+                                    <li>T-Shirts</li>
+                                </ul>
+                            </ul>
+                        </div>}
+
+                        {openColor === true && 
+                        <div className="products-filter-color">
+                            <header>
+                                <h1>COLOR</h1>
+                            </header>
+                            <main>
+                                <div>
+                                    <span style={{backgroundColor: '#FFA07A'}}></span>
+                                    <p>Light Salmon</p>
+                                    <h6>12</h6>
+                                </div>
+
+                                <div>
+                                    <span style={{backgroundColor: '#E9967A'}}></span>
+                                    <p>Dark Salmon</p>
+                                    <h6>20</h6>
+                                </div>
+
+                                <div>
+                                    <span style={{backgroundColor: '#FE5858'}}></span>
+                                    <p>Tomato</p>
+                                    <h6>59</h6>
+                                </div>
+
+                                <div>
+                                    <span style={{backgroundColor: '#00B2EE'}}></span>
+                                    <p>Deep Sky Blue</p>
+                                    <h6>45</h6>
+                                </div>
+
+                                <div>
+                                    <span style={{backgroundColor: '#00EEB3'}}></span>
+                                    <p>Electric Purple</p>
+                                    <h6>78</h6>
+                                </div>
+
+                                <div>
+                                    <span style={{backgroundColor: '#8DC63F'}}></span>
+                                    <p>Atlantis</p>
+                                    <h6>10</h6>
+                                </div>
+
+                                <div>
+                                    <span style={{backgroundColor: '#C38B4B'}}></span>
+                                    <p>Deep Lilac</p>
+                                    <h6>15</h6>
+                                </div>
+                            </main>
+                        </div>}
+
+                        {openSize === true && 
+                        <div className="products-filter-size">
+                            <header>
+                                <h1>SIZE</h1>
+                            </header>
+                            <main>
+                                <button>M</button>
+                                <button>S</button>
+                                <button>L</button>
+                                <button>SL</button>
+                                <button>XL</button>
+                            </main>
+                        </div>}
 
                     </header>
 

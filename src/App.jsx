@@ -4,6 +4,7 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 export default function App() {
 
     const [openMenu, setOpenMenu] = useState(false)
+    const [openCart, setOpenCart] = useState(false)
 
     return (
         <div className="full-page">
@@ -18,7 +19,52 @@ export default function App() {
 
                 <Link><img src="./img/elements/logo.png" alt="" /></Link>
 
-                <button>Sepet</button>
+                <button id="cart" onClick={() => (openCart === true ? setOpenCart(false) : setOpenCart(true))}>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>3</p>
+                    {openCart === true && 
+                    <div className="cart-details fade-in">
+
+                    <header>
+                        <p>You have <span>03 items</span> in your shopping bag</p>
+                    </header>
+
+                    <main>
+                        <div>
+                            <img src="./img/home-page/product01.jpg" alt="" />
+                                <div>
+                                    <h1>DUMMY PRODUCT NAME</h1>
+                                    <p>Price: $ 100.00</p>
+                                    <p>Qty: 02</p>
+                                </div>
+                                <button><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div>
+                                <img src="./img/home-page/product02.jpg" alt="" />
+                                <div>
+                                    <h1>DUMMY PRODUCT NAME</h1>
+                                    <p>Price: $ 300.00</p>
+                                    <p>Qty: 01</p>
+                                </div>
+                                <button><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </main>
+
+                        <footer>
+
+                            <h1>TOTAL $500.00</h1>
+
+                        </footer>
+
+                        <footer>
+
+                            <button>VIEW CART</button>
+                            <button>CHECK OUT</button>
+
+                        </footer>
+
+                    </div>}
+                </button>
 
             </header>
 
