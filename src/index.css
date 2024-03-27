@@ -1273,8 +1273,27 @@ p, h1, h2, h3, h4, h5, h6 {
         }
     }
 
+    .nav {
+        width: 300px;
+        > li {
+            > a {
+                padding: 15px 30px;
+            }
+        }
+    }
+
+    .home-page-top {
+        > .container {
+            > div {
+                > h1 {
+                    right: 10px !important;
+                }
+            }
+        }
+    }
+
     .cart-details {
-        width: 350px;
+        width: 320px;
         right: -30px;
         > header, main, footer {
             padding: 10px;
@@ -1324,7 +1343,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .home-hero-slide-card {
         > div {
-            display: none;
+            width: 180px;
         }
     }
 
@@ -1334,6 +1353,23 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .home-page-brands {
         bottom: -100px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        background-color: #000 !important;
+        opacity: .2 !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+    }
+
+    .swiper-pagination {
+        display: flex !important;
+        justify-content: end;
+        padding: 15px 30px;
     }
 
     .footer {
