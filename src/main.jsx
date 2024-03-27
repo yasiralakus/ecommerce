@@ -1,21 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import App from './App.jsx';
-import './index.css';
-import Home from './Pages/Home.jsx';
-import Products from './Pages/Products.jsx';
-import About from './Pages/About.jsx';
-import Contact from './Pages/Contact.jsx';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Home from './Pages/Home.jsx'
+import Products from './Pages/Products.jsx'
+import About from './Pages/About.jsx'
+import Contact from './Pages/Contact.jsx'
 
-ReactDOM.hydrate(
-  <Router>
-    <App>
-      <Route exact path="/" component={Home} />
-      <Route path="/products" component={Products} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-    </App>
-  </Router>,
-  document.getElementById('root')
-);
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <App />,
+        children: [
+            {
+                index: true,
+                element: <Home />
+            },
+            {
+                path:'/products',
+                element: <Products />
+            },
+            {
+                path:'/about',
+                element: <About />
+            },
+            {
+                path:'/contact',
+                element: <Contact />
+            },
+        ]
+    }
+])
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <RouterProvider router={router} />
+)
