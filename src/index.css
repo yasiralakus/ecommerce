@@ -1183,6 +1183,159 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* USER AUTH END */
 
+/* DETAILS START */
+
+.product-details {
+    padding: 80px 0;
+    background-color: #F6F6F6;
+    > .container {
+        background-color: #fff;
+        display: flex;
+        padding: 30px 40px;
+        gap: 32px;
+
+        > div {
+            width: auto !important;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 24px;
+            > header {
+                display: flex;
+                justify-content: space-between;
+                > span {
+                    color: #C87065;
+                    font-size: 13px;
+                }
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    > h1 {
+                        font-size: 16px;
+                        color: #434343;
+                    }
+                    > h3 {
+                        color: #C87065;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            > main {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 24px;
+                > p {
+                    font-size: 13px;
+                    color: #666 ;
+                    font-weight: 400;
+                }
+
+            }
+
+            > footer {
+                display: flex;
+                gap: 16px;
+                flex-wrap: wrap;
+                > img {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+.details-add-cart {
+    background-color: #d3d3d3;
+    display: flex;
+    gap: 1px;
+    > button {
+        padding: 8px 16px;
+        background-color: #F6F6F6;
+        border: none;
+        font-size: 13px;
+        color: #434343;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    > button:hover {
+        color: #C8A165;
+    }
+}
+
+.details-color {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    > h6 {
+        font-size: 14px;
+        color: #434343;
+        font-weight: 700;
+        width: 60px;
+    }
+    > span {
+        width: 16px;
+        height: 16px;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+    > span:hover {
+        border: 1px solid #000;
+    }
+}
+
+.details-size {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    > h6 {
+        font-size: 14px;
+        color: #434343;
+        font-weight: 700;
+        width: 55px;
+    }
+    > p {
+        font-size: 13px;
+        color: #434343;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    > p:hover {
+        color: #C8A165;
+    }
+}
+
+.details-buttons {
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    > button {
+        padding: 8px 16px;
+        background-color: transparent;
+        border: none;
+        font-size: 13px;
+        color: #434343;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    > button:hover {
+        color: #C8A165;
+    }
+    > p {
+        border-right: 1px solid #d3d3d3;
+        border-left: 1px solid #d3d3d3;
+        padding: 8px 16px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #434343;
+    }
+}
+
+/* DETAILS END */
+
+
 
 @media (width < 1270px) {
     .home-hero-slide-card {
@@ -1265,6 +1418,25 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (width < 1050px) {
     .container {
         width: 760px;
+    }
+
+    .product-details {
+        padding: 32px 16px;
+        > .container {
+            padding: 15px 20px;
+            flex-direction: column;
+            > div {
+                > header {
+                    flex-direction: column;
+                    > span {
+                        order: 1;
+                    }
+                    > div {
+                        order: 2;
+                    }
+                }
+            }
+        }
     }
 
     .authentication {

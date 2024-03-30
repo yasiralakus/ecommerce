@@ -2,11 +2,11 @@ import { useState } from "react";
 import HomeBrandsSlider from "../Components/Home-Brands-Slider";
 import HomeDiscountSlider from "../Components/Home-Discount-Slider";
 import HomeHeroSlider from "../Components/Home-Hero-Slider";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
     const [homePageOnline, setHomePageOnline] = useState(1);
-
 
     return (
         <div className="outlet-page">
@@ -45,7 +45,7 @@ export default function Home() {
 
                     <main>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product01.jpg" alt="" />
 
@@ -68,9 +68,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product02.jpg" alt="" />
 
@@ -93,9 +93,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product03.jpg" alt="" />
 
@@ -118,9 +118,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product04.jpg" alt="" />
 
@@ -143,7 +143,7 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
                     </main>
 
@@ -177,7 +177,7 @@ export default function Home() {
                     {homePageOnline === 1 && 
                     <main className="fade-in">
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product04.jpg" alt="" />
 
@@ -202,9 +202,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product08.jpg" alt="" />
 
@@ -227,9 +227,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product09.jpg" alt="" />
 
@@ -252,9 +252,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product10.jpg" alt="" />
 
@@ -277,9 +277,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product05.jpg" alt="" />
 
@@ -302,9 +302,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product06.jpg" alt="" />
 
@@ -327,9 +327,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product07.jpg" alt="" />
 
@@ -352,9 +352,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product01.jpg" alt="" />
 
@@ -377,13 +377,13 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
                     </main>}
 
                     {homePageOnline === 2 && 
                     <main className="fade-in">
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product06.jpg" alt="" />
 
@@ -408,9 +408,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product05.jpg" alt="" />
 
@@ -433,9 +433,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product13.jpg" alt="" />
 
@@ -458,9 +458,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product12.jpg" alt="" />
 
@@ -483,9 +483,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product09.jpg" alt="" />
 
@@ -508,9 +508,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product11.jpg" alt="" />
 
@@ -533,9 +533,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product08.jpg" alt="" />
 
@@ -558,9 +558,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product10.jpg" alt="" />
 
@@ -583,13 +583,13 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
                     </main>}
 
                     {homePageOnline === 3 && 
                     <main className="fade-in">
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product13.jpg" alt="" />
 
@@ -614,9 +614,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product10.jpg" alt="" />
 
@@ -639,9 +639,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product12.jpg" alt="" />
 
@@ -664,9 +664,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product06.jpg" alt="" />
 
@@ -689,9 +689,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product09.jpg" alt="" />
 
@@ -714,9 +714,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product04.jpg" alt="" />
 
@@ -739,9 +739,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product11.jpg" alt="" />
 
@@ -764,9 +764,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product08.jpg" alt="" />
 
@@ -789,13 +789,13 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
                     </main>}
 
                     {homePageOnline === 4 && 
                     <main className="fade-in">
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product13.jpg" alt="" />
 
@@ -820,9 +820,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product10.jpg" alt="" />
 
@@ -845,9 +845,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product12.jpg" alt="" />
 
@@ -870,9 +870,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product06.jpg" alt="" />
 
@@ -895,9 +895,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product01.jpg" alt="" />
 
@@ -919,9 +919,9 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
 
-                        <div className="product-card">
+                        <Link to={'/product-details'} className="product-card">
 
                             <img src="./img/home-page/product11.jpg" alt="" />
 
@@ -944,7 +944,7 @@ export default function Home() {
                                 <button><i class="fa-solid fa-cart-plus"></i></button>
                             </div>
 
-                        </div>
+                        </Link>
          
                     </main>}
 

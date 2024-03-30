@@ -8,6 +8,7 @@ import Products from './Pages/Products.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 import Auth from './Pages/Auth.jsx'
+import Details from './Pages/Details.jsx'
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: '/auth',
                 element: <Auth />
+            },
+            {
+                path: '/product-details',
+                element: <Details />
             }
         ]
     }
