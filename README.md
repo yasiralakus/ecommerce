@@ -2,4 +2,4 @@
 
 React JS, React Router ve CSS kullanarak bir e-ticaret platformu oluşturuyorum.
 
-Canlı Link: -----------------------
+Canlı Link: https://yasiralakus-ecommerce.netlify.app/
