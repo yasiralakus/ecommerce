@@ -75,6 +75,7 @@ export default function App() {
                 <li><NavLink to={'/products'}>PRODUCTS</NavLink></li>
                 <li><NavLink to={'/about'}>ABOUT</NavLink></li>
                 <li><NavLink to={'/contact'}>CONTACT</NavLink></li>
+                <li><NavLink to={'/auth'}>REGISTRATION</NavLink></li>
 
             </ul>}
 

@@ -7,6 +7,7 @@ import Home from './Pages/Home.jsx'
 import Products from './Pages/Products.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
+import Auth from './Pages/Auth.jsx'
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
                 path:'/contact',
                 element: <Contact />
             },
+            {
+                path: '/auth',
+                element: <Auth />
+            }
         ]
     }
 ])
