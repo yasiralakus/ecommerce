@@ -70,11 +70,6 @@ export default function App() {
 
             {openMenu === true && 
             <ul className="nav">
-{/* 
-                <li><Link onClick={() => (openMenu(false))} to={'/'}>HOME</Link></li>
-                <li><Link onClick={() => (openMenu(false))} to={'/products'}>PRODUCTS</Link></li>
-                <li><Link onClick={() => (openMenu(false))} to={'/about'}>ABOUT</Link></li>
-                <li><Link onClick={() => (openMenu(false))} to={'/contact'}>CONTACT</Link></li> */}
 
                 <li><NavLink to={'/'}>HOME</NavLink></li>
                 <li><NavLink to={'/products'}>PRODUCTS</NavLink></li>
